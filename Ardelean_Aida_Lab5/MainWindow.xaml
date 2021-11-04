@@ -6,13 +6,32 @@
         xmlns:local="clr-namespace:Ardelean_Aida_Lab5"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TabControl x:Name="tbCtrlAutoLot" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="744" Margin="10,10,0,0" SelectedIndex="0">
+    <Grid Margin="0,0,0,0">
+        <TabControl x:Name="tbCtrlAutoLot" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="744" Margin="20,10,0,0" SelectedIndex="0">
             <TabItem Header="Customers">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5" Margin="0,-1,-0.6,0" Height="373" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+
+                    </Grid.ColumnDefinitions>
+                    <Button Content="New" HorizontalAlignment="Left" Margin="21,50,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+                    <Button Content="Edit" HorizontalAlignment="Left" Margin="21,98,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+                    <Button Content="Delete" HorizontalAlignment="Left" Margin="21,146,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+                    <Button Content="Save" HorizontalAlignment="Left" Margin="21,266,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+                    <Button Content="Cancel" HorizontalAlignment="Left" Margin="21,309,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+                    <Button Content="Previous" HorizontalAlignment="Left" Margin="259,185,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+                    <Button Content="Next" HorizontalAlignment="Left" Margin="621,185,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+                </Grid>
             </TabItem>
             <TabItem Header="Inventory">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5" Margin="0,0,0.4,1">
+                    <Button Content="New" HorizontalAlignment="Left" Margin="20.6,50,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+                    <Button Content="Edit" HorizontalAlignment="Left" Margin="20.6,96,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+                    <Button Content="Delete" HorizontalAlignment="Left" Margin="20.6,146,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+                    <Button Content="Save" HorizontalAlignment="Left" Margin="20.6,266,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+                    <Button Content="Cancel" HorizontalAlignment="Left" Margin="20.6,315,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+                    <Button Content="Previous" HorizontalAlignment="Left" Margin="258.6,184,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+                    <Button Content="Next" HorizontalAlignment="Left" Margin="590.6,184,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
+                </Grid>
             </TabItem>
             <TabItem Header="Orders">
                 <Grid Background="#FFE5E5E5"/>
