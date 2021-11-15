@@ -18,7 +18,7 @@ namespace ClassLibrary1
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Custid { get; set; }
-
+        public int? CustId { get; set; }
         [StringLength(50)]
         public string FirstName { get; set; }
 

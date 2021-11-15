@@ -130,7 +130,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>AutoLot.mdf</DependentUpon>
     </Content>
-    <Resource Include="Image1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
