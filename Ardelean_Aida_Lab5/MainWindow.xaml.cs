@@ -77,6 +77,9 @@ namespace Ardelean_Aida_Lab5
         private void btnEdit0_Click(object sender, RoutedEventArgs e)
         {
             action = ActionState.Edit;
+            BindingOperations.ClearBinding(firstNameTextBox, TextBox.TextProperty);
+            BindingOperations.ClearBinding(lastNameTextBox, TextBox.TextProperty);
+            //SetValidationBinding();
         }
 
         private void btnDelete0_Click(object sender, RoutedEventArgs e)
@@ -151,7 +154,6 @@ namespace Ardelean_Aida_Lab5
         {
             inventoryVSource.View.MoveCurrentToNext();
         }
-
         private void SaveInventory()
         {
             Inventory inventory = null;
